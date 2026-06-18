@@ -24,7 +24,6 @@ app.get('/api/mandi-prices', async (req, res) => {
     }
     console.log("Calling Data.gov.in API...");
     const response = await axios.get(MANDI_API_URL, {
-    console.log("Data.gov.in responded successfully");
       params: {
         'api-key': apiKey,
         format: 'json',
